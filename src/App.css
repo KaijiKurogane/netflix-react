@@ -1,0 +1,156 @@
+/* Netflix css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color:#22254b;
+  --secondary-color: #373b69;
+}
+.component{
+  background-color:#373b69;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.tag{
+  color:white;
+  padding:10px 20px;
+  background-color: orange;
+  border-radius: 50px;
+  margin:5px;
+  display:inline-block;
+  cursor: pointer;
+}
+.tag.highlight{
+  background-color: red;
+}
+.searchBody{
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  padding:0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color:#fff;
+  font-family: inherit;
+  width: 70%;
+}
+.searchContent{
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  padding:0.5rem 1rem;
+  border-right: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 1rem;
+  color:#fff;
+  font-family: inherit;
+  width: 80%;
+}
+.search-btn{
+  background-color: transparent white;
+  border: 2px solid var(--primary-color);
+  padding:0.5rem 1rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 1rem;
+  color:#000;
+  font-family: inherit;
+  cursor: pointer;
+  width: 20%;
+}
+.search:focus{
+  outline:0;
+  background-color: var(--primary-color);
+}
+.search:active{
+  outline: none;
+}
+.search::placeholder{
+  color: #7378c5;
+}
+.Header{
+  padding:1rem;
+  display:flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+.card {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+  background-color: var(--secondary-color);
+}
+.movie {
+  width: 300px;
+  margin: 1rem;
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+  background-color: var(--primary-color);
+  position:relative;
+  overflow: hidden;
+}
+.movieContent{
+  margin: 10px;
+  color: white;
+}
+.image {
+  width: 100%;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+.pagination-custom {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.pagination-custom li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.pagination-custom li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #333;
+}
+.pagination-custom li a:hover,
+.pagination-custom li a.current {
+  background-color: #ddd;
+}
+.pagination-custom li a.prev,
+.pagination-custom li a.next {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.pagination-custom li a.prev {
+  margin-right: 1rem;
+}
+.pagination-custom li a.next {
+  margin-left: 1rem;
+}
+span{
+  background-color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
