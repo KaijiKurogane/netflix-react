@@ -154,3 +154,14 @@ span{
   border-radius: 3px;
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  .pagination-custom li {
+    display: none;
+  }
+  .pagination-custom li a.prev,
+  .pagination-custom li a.next,
+  .pagination-custom li span.current {
+    display: inline-block;
+    font-size: 14px;
+  }
+}
